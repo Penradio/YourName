@@ -47,10 +47,19 @@
 <body>
   <div class="id1">
     <script type="text/javascript">
-    var a = prompt(" Hi! what is your name?");
-    document.write('<h1>');
-    document.write("You said your name is " + a);
+    var a = prompt(" Hi! what is your name?"," ");
+    if(a == null)
+    {document.write("<h1>Hi Mr Unknown!</h1>");
+  }else if(a == " ")
+  {
+    document.write("<h1>Hi!</h1>");
+  }else
+    {
+    document.write("<h1>");
+    document.write("Hi " + a + "!");
     document.write("</h1>");
+    }
+
     </script>
   </div>
   <div class="id2">
