@@ -7,10 +7,16 @@
   <link rel = "icon" href="favicon.ico">
   <title>Hi</title>
   <style media="screen">
-
+  * {
+  box-sizing: border-box;
+}
   body {
-    color: inherit;
+    margin: 0;
+    font-family: Arial;
   }
+  * {
+  box-sizing: border-box;
+}
   h1 {
     color = #99000000;
     font-family: sans-serif;
@@ -28,13 +34,24 @@
 
   }
   .id2 {
-    height: 100%;
-    width: 100%;
     position: relative;
     border: none;
     opacity: 60%;
-    
+    position: fixed;
+    right:0;
+    bottom:0;
+    min-height: 100%;
+    min-width: 100%;
+    left:0;
+    up:0;
 
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
   }
  h1 {
    color: #99FFFFFF;
@@ -47,6 +64,11 @@
   </style>
 </head>
 <body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="Mountains.mp4" type="video/mp4">
+
+</video>
   <div class="id1">
     <script type="text/javascript">
     var a = prompt(" Hi! what is your name?"," ");
@@ -66,9 +88,9 @@
 
     </script>
   </div>
-  <div class="id2">
- <video src="Mountains.mp4" alt="man on hill" height = "100%" width = "100%" autoplay muted loop>
-  </div>
+
+
+
 
 </body>
 </html>
