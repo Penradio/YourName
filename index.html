@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+  body {
+    color: inherit;
+  }
+  h1 {
+    color = rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+  }
+  .id1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .id2 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: none;
+    opacity: 60%;
+    align-content: flex-end;
+
+  }
+
+  h1:hover {
+    color: #FFFFFF;
+
+  }
+
+  </style>
+</head>
+<body>
+  <div class="id1">
+    <script type="text/javascript">
+    var a = prompt(" Hi! what is your name?");
+    document.write("<h1>");
+    document.write("You said your name is " + a);
+    document.write("</h1>");
+    </script>
+  </div>
+  <div class="id2">
+ <video src="Mountains.mp4" alt="man on hill" height = "100%" width = "100%" autoplay muted loop>
+  </div>
+
+</body>
+</html>
