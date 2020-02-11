@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link rel = "icon" href="favicon.ico">
+  <title>Hi</title>
   <style media="screen">
+
   body {
     color: inherit;
   }
@@ -50,6 +52,7 @@
     var a = prompt(" Hi! what is your name?"," ");
     if(a == null)
     {document.write("<h1>Hi Mr Unknown!</h1>");
+
   }else if(a == " ")
   {
     document.write("<h1>Hi!</h1>");
@@ -58,6 +61,7 @@
     document.write("<h1>");
     document.write("Hi " + a + "!");
     document.write("</h1>");
+    document.title = "Hi " + a + "!";
     }
 
     </script>
